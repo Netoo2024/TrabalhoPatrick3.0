@@ -75,17 +75,18 @@ function avancar(botao) {
         document.getElementById("aprovado").appendChild(li);
     } 
     else {
-        alert("Já está aprovado!");
+        alert("Está aprovado!");
     }
 
     salvarDados();
 }
 
 function concluir(span) {
-    span.parentElement.classList.toggle("concluida");
+    span.parentElement.classList.toggle("concluido");
     salvarDados();
 }
 
 function remover(botao) {
     botao.parentElement.parentElement.remove();
     salvarDados();
+}
