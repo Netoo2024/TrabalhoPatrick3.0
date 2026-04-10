@@ -2,30 +2,31 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Fluxo Kanban</title>
-    <title>Kanban Profissional</title>
+    <title>Kanban</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-@@ -15,21 +15,23 @@
+
+<h1>🚀 Fluxo DEV → TEST → APROVADO</h1>
+
+<div class="input-area">
+    <input type="text" id="tarefa" placeholder="Nova tarefa">
+    <button onclick="adicionarTarefa()">Adicionar</button>
 </div>
 
 <div class="board">
 
     <div class="coluna">
-        <h2>DEV</h2>
         <h2>DEV (<span id="count-dev">0</span>)</h2>
         <ul id="dev"></ul>
     </div>
 
     <div class="coluna">
-        <h2>TESTE</h2>
         <h2>TESTE (<span id="count-teste">0</span>)</h2>
         <ul id="teste"></ul>
     </div>
 
     <div class="coluna">
-        <h2>APROVADO</h2>
         <h2>APROVADO (<span id="count-aprovado">0</span>)</h2>
         <ul id="aprovado"></ul>
     </div>
@@ -34,3 +35,4 @@
 
 <script src="script.js"></script>
 </body>
+</html>
